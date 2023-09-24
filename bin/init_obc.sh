@@ -19,6 +19,6 @@ DNF_NMAP='sudo dnf install nmap -y'
     $DNF_NMAP
     mkdir ~/.obc
     git clone -b stable --single-branch https://github.com/OozeSec/OrbitalBeamCannon.git ~/.obc
-    echo "alias obc='python3 ~/.obc/obc.py'" >> ~/.bashrc && source ~/.bashrc
+    echo "alias obc='python3 ~/.obc/bin/obc.py'" >> ~/.bashrc && source ~/.bashrc
     echo "Orbital Beam Cannon Now Online & Operational."
 fi
