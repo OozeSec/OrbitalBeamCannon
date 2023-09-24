@@ -8,6 +8,7 @@ DNF="$(cat $OSTEMP | grep 'Fedora\|CentOS\|RHEL' | wc -l)"
 
 if [ $APT -eq 1 ] ; then
 APT_NMAP="$(sudo apt-get install nmap -y)"
+    echo ".....If waiting for more than 10s, press [ENTER]....."
     $APT_NMAP
     mkdir ~/.obc
     git clone -b stable --single-branch https://github.com/OozeSec/OrbitalBeamCannon.git ~/.obc
